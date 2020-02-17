@@ -16,6 +16,7 @@
   flex: 0 1 18%;
   margin-bottom: 2.5rem;
   background-color: $movie-white;
+  font-size: 1.4rem;
   &__image {
     height: 32rem;
     border-radius: 0.6rem;
@@ -25,86 +26,29 @@
     border-bottom-right-radius: 0;
   }
   &__information {
-    padding: 2.2rem 1.5rem;
-    display: flex;
-    align-content: center;
-  }
-  &__title {
-    margin-right: 1rem;
-    flex: 1; 
-  }
-  &__ratingholder {
-    color: $movie-green;
-    background: linear-gradient(90deg, rgba(60,177,62,1) 0%, rgba(60,177,62,1) 0%, rgba(135,232,135,1) 100%);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.05), 0 0.5rem 1rem rgba(0,0,0,0.12);
-    height: 3.6rem;
-    width: 3.6rem;
-    border-radius: 100%;
+    padding: 1.5rem;
     position: relative;
-    flex: 0 0 3.6rem;
-    & span {
-      color: $movie-white;
-      font-size: 1.2rem;
-      font-weight: 700;
-      @include absoluteCenter;
-    }
   }
-}
-
-@media screen and (max-width: 1240px) {
-  .movieSection {
-    padding: 4rem;
-    &__title {
-      margin-bottom: 2.5rem;
-    }
-  }
-  
-  .movieCard {
-    flex: 0 1 24%;
-    margin-bottom: 1.5rem;
-    &__image {
-      height: 20rem;
-    }
-    &__information {
-      padding: 2rem 1rem;
-    }
-    &__title {
+  &__buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    & button {
+      padding: 1rem 0.8rem;
+      width: 48%;
       font-size: 1.2rem;
-    }
-    &__ratingholder {
-      height: 3rem;
-      width: 3rem;
-      flex: 0 0 3rem;
-      & span {
-        font-size: 1.2rem;
+      &:last-child{
+        margin-right: 0;
       }
     }
   }
-}
-
-@media screen and (max-width: 767px) {
-  .movieSection {
-    padding: 2rem;
-    &__title {
-      margin-bottom: 2.5rem;
-    }
+  &__title {
+    margin: 0 4rem 1.5rem 0;
+    height: 4.5rem;
   }
-  
-  .movieCard {
-    flex: 0 1 48%;
-    margin-bottom: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .movieCard {
-    flex: 0 1 100%;
-    margin-bottom: 2rem;
-    &__image {
-      height: 25rem;
-    }
-    &__title {
-      font-size: 1.4rem;
-    }
+  & .ratingholder {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 }

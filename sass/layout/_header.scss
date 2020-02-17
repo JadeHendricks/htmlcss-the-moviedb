@@ -6,8 +6,11 @@
     position: relative;
     padding: 10rem;
     line-height: 1;
-    &__wrapper {
-        width: 65rem;
+    &__date {
+        font-size: 1.4rem;
+        display: block;
+        margin-bottom: 2rem;
+        font-weight: 700;
     }
     &__slug {
         font-size: 2.4rem;
@@ -17,12 +20,17 @@
     }
     &__title {
         line-height: 1;
-        margin: 3rem 0 1.5rem 0;  
+        margin: 3rem 0 0.5rem 0;  
     }
     &__description {
         line-height: 1.8;
         margin-bottom: 2.5rem;
     }
+    & .ratingholder {
+        position: absolute;
+        bottom: 10rem;
+        right: 10rem;
+      }
 }
 
 .movie-header-starring {

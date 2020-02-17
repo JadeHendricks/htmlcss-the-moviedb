@@ -1,0 +1,20 @@
+.ratingholder {
+  color: $movie-green;
+  background: linear-gradient(90deg, rgba(60,177,62,1) 0%, rgba(60,177,62,1) 0%, rgba(135,232,135,1) 100%);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.05), 0 0.5rem 1rem rgba(0,0,0,0.12);
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 100%;
+  &__number {
+    color: $movie-white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    @include absoluteCenter;
+  }
+  &--orange {
+    background: linear-gradient(90deg, rgba(255,132,0,1) 0%, rgba(255,218,0,1) 100%);
+  }
+  &--red {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,146,146,1) 100%);
+  }
+}

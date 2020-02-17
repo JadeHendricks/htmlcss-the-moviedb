@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
   display: block; }
 
+.container-small {
+  max-width: 70rem;
+  display: block; }
+
 *,
 html,
 body {
@@ -270,7 +274,8 @@ strong {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05), 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
   flex: 0 1 18%;
   margin-bottom: 2.5rem;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-size: 1.4rem; }
   .movieCard__image {
     height: 32rem;
     border-radius: 0.6rem;
@@ -279,77 +284,60 @@ strong {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
   .movieCard__information {
-    padding: 2.2rem 1.5rem;
+    padding: 1.5rem;
+    position: relative; }
+  .movieCard__buttons {
+    margin-top: 1.5rem;
     display: flex;
-    align-content: center; }
-  .movieCard__title {
-    margin-right: 1rem;
-    flex: 1; }
-  .movieCard__ratingholder {
-    color: #3cb13e;
-    background: linear-gradient(90deg, #3cb13e 0%, #3cb13e 0%, #87e887 100%);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05), 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
-    height: 3.6rem;
-    width: 3.6rem;
-    border-radius: 100%;
-    position: relative;
-    flex: 0 0 3.6rem; }
-    .movieCard__ratingholder span {
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 700;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-
-@media screen and (max-width: 1240px) {
-  .movieSection {
-    padding: 4rem; }
-    .movieSection__title {
-      margin-bottom: 2.5rem; }
-  .movieCard {
-    flex: 0 1 24%;
-    margin-bottom: 1.5rem; }
-    .movieCard__image {
-      height: 20rem; }
-    .movieCard__information {
-      padding: 2rem 1rem; }
-    .movieCard__title {
+    justify-content: space-between; }
+    .movieCard__buttons button {
+      padding: 1rem 0.8rem;
+      width: 48%;
       font-size: 1.2rem; }
-    .movieCard__ratingholder {
-      height: 3rem;
-      width: 3rem;
-      flex: 0 0 3rem; }
-      .movieCard__ratingholder span {
-        font-size: 1.2rem; } }
-
-@media screen and (max-width: 767px) {
-  .movieSection {
-    padding: 2rem; }
-    .movieSection__title {
-      margin-bottom: 2.5rem; }
-  .movieCard {
-    flex: 0 1 48%;
-    margin-bottom: 2.5rem; } }
-
-@media screen and (max-width: 520px) {
-  .movieCard {
-    flex: 0 1 100%;
-    margin-bottom: 2rem; }
-    .movieCard__image {
-      height: 25rem; }
-    .movieCard__title {
-      font-size: 1.4rem; } }
+      .movieCard__buttons button:last-child {
+        margin-right: 0; }
+  .movieCard__title {
+    margin: 0 4rem 1.5rem 0;
+    height: 4.5rem; }
+  .movieCard .ratingholder {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
 
 .button {
   border: 0;
-  border-radius: 0.5rem;
   padding: 1.2rem 3.5rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer; }
   .button--green {
-    background-color: #3cb13e;
-    color: #ffffff; }
+    color: #ffffff;
+    background-color: #3cb13e; }
+  .button--skeleton {
+    background-color: transparent;
+    color: #3cb13e;
+    border: 0.2rem solid #3cb13e; }
+
+.ratingholder {
+  color: #3cb13e;
+  background: linear-gradient(90deg, #3cb13e 0%, #3cb13e 0%, #87e887 100%);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05), 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  height: 3.6rem;
+  width: 3.6rem;
+  border-radius: 100%; }
+  .ratingholder__number {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .ratingholder--orange {
+    background: linear-gradient(90deg, #ff8400 0%, #ffda00 100%); }
+  .ratingholder--red {
+    background: linear-gradient(90deg, red 0%, #ff9292 100%); }
 
 .navigation {
   flex: 0 0 16rem;
@@ -367,8 +355,11 @@ strong {
   position: relative;
   padding: 10rem;
   line-height: 1; }
-  .movie-header__wrapper {
-    width: 65rem; }
+  .movie-header__date {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 2rem;
+    font-weight: 700; }
   .movie-header__slug {
     font-size: 2.4rem;
     font-weight: 400;
@@ -376,10 +367,14 @@ strong {
     text-transform: uppercase; }
   .movie-header__title {
     line-height: 1;
-    margin: 3rem 0 1.5rem 0; }
+    margin: 3rem 0 0.5rem 0; }
   .movie-header__description {
     line-height: 1.8;
     margin-bottom: 2.5rem; }
+  .movie-header .ratingholder {
+    position: absolute;
+    bottom: 10rem;
+    right: 10rem; }
 
 .movie-header-starring {
   color: #ffffff; }
