@@ -1,0 +1,11 @@
+.button {
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.6rem;
+
+    &--green {
+        background-color: $movie-green;
+        color: $movie-white;
+    }
+}

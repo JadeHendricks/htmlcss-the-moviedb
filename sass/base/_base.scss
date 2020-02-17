@@ -15,6 +15,14 @@ body {
     box-sizing: border-box;
 }
 
+.body {
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+}
+
 .container {
     max-width: 156rem;
     margin: 0 auto;

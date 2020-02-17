@@ -1,0 +1,42 @@
+.movie-header {
+    height: 72rem;
+    background: $movie-black url("../assets/header-poster.jpg") no-repeat top left;
+    background-size: cover;
+    color: $movie-white;
+    position: relative;
+    padding: 10rem;
+    line-height: 1;
+    &__wrapper {
+        width: 65rem;
+    }
+    &__slug {
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    &__title {
+        line-height: 1;
+        margin: 3rem 0 1.5rem 0;  
+    }
+    &__description {
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.movie-header-starring {
+    color: $movie-white;
+    &__title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 1.5rem;
+    }
+    &__image {
+        margin-right: 1.5rem;
+        border-radius: 3rem;
+    }
+}

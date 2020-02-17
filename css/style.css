@@ -11,6 +11,12 @@ html {
 body {
   box-sizing: border-box; }
 
+.body {
+  display: flex; }
+
+.main-content {
+  flex: 1; }
+
 .container {
   max-width: 156rem;
   margin: 0 auto;
@@ -335,3 +341,54 @@ strong {
       height: 25rem; }
     .movieCard__title {
       font-size: 1.4rem; } }
+
+.button {
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.5rem;
+  font-size: 1.6rem; }
+  .button--green {
+    background-color: #3cb13e;
+    color: #ffffff; }
+
+.navigation {
+  flex: 0 0 16rem;
+  background-color: #333333; }
+
+.topnav {
+  background-color: #333333;
+  height: 9rem; }
+
+.movie-header {
+  height: 72rem;
+  background: #333333 url("../assets/header-poster.jpg") no-repeat top left;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+  padding: 10rem;
+  line-height: 1; }
+  .movie-header__wrapper {
+    width: 65rem; }
+  .movie-header__slug {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase; }
+  .movie-header__title {
+    line-height: 1;
+    margin: 3rem 0 1.5rem 0; }
+  .movie-header__description {
+    line-height: 1.8;
+    margin-bottom: 2.5rem; }
+
+.movie-header-starring {
+  color: #ffffff; }
+  .movie-header-starring__title {
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .movie-header-starring__wrapper {
+    display: flex;
+    margin-top: 1.5rem; }
+  .movie-header-starring__image {
+    margin-right: 1.5rem;
+    border-radius: 3rem; }
