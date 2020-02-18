@@ -26,6 +26,21 @@
         line-height: 1.8;
         margin-bottom: 2.5rem;
     }
+    &__playicon {
+        fill: $movie-white;
+        width: 18rem;
+        height: 18rem;
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        transition: all .5s;
+        &:hover {
+            fill: $movie-green;
+            transform: translate(-50%, -50%) scale(1.3) rotate(360deg);
+            cursor: pointer;
+        }
+    }
     & .ratingholder {
         position: absolute;
         bottom: 10rem;
