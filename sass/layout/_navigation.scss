@@ -2,6 +2,49 @@
     flex: 0 0 16rem;
     background-color: $movie-white;
     box-shadow: 0.8rem 0 1rem -1rem $movie-lightgrey;
+    text-align: center;
+    color: $movie-grey;
+    font-weight: 700;
+    &__logo {
+        color: $movie-black;
+        padding: 2.8rem 0;
+        font-size: 2.8rem;
+        border-bottom: 0.1rem solid $movie-pagination-grey;
+        text-transform: uppercase;
+        & span {
+            color: $movie-green;
+            font-size: 3rem;
+            position: relative;
+            top: 0.8rem;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__node {
+        color: $movie-black;
+        padding: 3rem 0;
+        border-bottom: 0.1rem solid $movie-pagination-grey;
+        transition: 0.4s all;
+        &:hover {
+            color: $movie-green;
+            cursor: pointer;
+        }
+        &.active {
+            color: $movie-green;
+        }
+    }
+    &__icon {
+        fill: currentColor;
+        height: 4.2rem;
+        width: 4.2rem;
+        margin-bottom: 1rem;
+    }
+    &__nodename {
+        color: currentColor;
+        font-size: 1.4rem;
+    }
 }
 
 .topnav {
@@ -12,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     & button {
         margin-right: 1.5rem;
         &:last-child {
@@ -23,12 +67,22 @@
 .searchForm {
     height: 9rem;
     flex: 1;
+    &__icon {
+        fill: $movie-lightgrey;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: 3.5rem;
+        top: 50%;
+        margin-top: -1.5rem; 
+    }
     &__input {
         height: 100%;
         width: 100%;
         border: 0;
-        font-size: 2.2rem;
-        padding: 2rem 2rem 2rem 2rem;
+        font-size: 2rem;
+        padding: 2rem 2rem 2rem 7rem;
         outline: 0;
+        transition: .4s all;
     }
 }

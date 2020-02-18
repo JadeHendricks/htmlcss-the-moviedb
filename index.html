@@ -11,12 +11,41 @@
     </head>
     <body class="body">
         <nav class="navigation">
-            
+            <h3 class="navigation__logo">MDBv2<span>&#149;</span></h3>
+            <div class="navigation__wrapper">
+                <a class="navigation__node active">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-video"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">Movies</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-desktop"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">TV Series</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-presentation"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">New Arrivals</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">Coming Soon</h5>
+                </a>
+            </div>
         </nav>
         <main class="main-content">
 
             <nav class="topnav">
                 <form class="searchForm">
+                    <svg class="searchForm__icon">
+                        <use xlink:href="assets/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
                     <input class="searchForm__input" type="search" name="search" placeholder="Search for Movies or TV Series" value="">
                 </form>
                 <div class="topnav__buttons">

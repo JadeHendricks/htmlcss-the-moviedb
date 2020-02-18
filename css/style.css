@@ -321,19 +321,19 @@ strong {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #868686; }
+  color: #bbb9bc; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #868686; }
+  color: #bbb9bc; }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #868686; }
+  color: #bbb9bc; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #868686; }
+  color: #bbb9bc; }
 
 /* clears the 'X' from Internet Explorer */
 input[type=search]::-ms-clear {
@@ -361,7 +361,42 @@ textarea {
 .navigation {
   flex: 0 0 16rem;
   background-color: #ffffff;
-  box-shadow: 0.8rem 0 1rem -1rem #bbb9bc; }
+  box-shadow: 0.8rem 0 1rem -1rem #bbb9bc;
+  text-align: center;
+  color: #868686;
+  font-weight: 700; }
+  .navigation__logo {
+    color: #333333;
+    padding: 2.8rem 0;
+    font-size: 2.8rem;
+    border-bottom: 0.1rem solid #e7e7e7;
+    text-transform: uppercase; }
+    .navigation__logo span {
+      color: #3cb13e;
+      font-size: 3rem;
+      position: relative;
+      top: 0.8rem; }
+  .navigation__wrapper {
+    display: flex;
+    flex-direction: column; }
+  .navigation__node {
+    color: #333333;
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid #e7e7e7;
+    transition: 0.4s all; }
+    .navigation__node:hover {
+      color: #3cb13e;
+      cursor: pointer; }
+    .navigation__node.active {
+      color: #3cb13e; }
+  .navigation__icon {
+    fill: currentColor;
+    height: 4.2rem;
+    width: 4.2rem;
+    margin-bottom: 1rem; }
+  .navigation__nodename {
+    color: currentColor;
+    font-size: 1.4rem; }
 
 .topnav {
   background-color: #ffffff;
@@ -370,7 +405,8 @@ textarea {
   padding: 0 2rem 0 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .topnav button {
     margin-right: 1.5rem; }
     .topnav button:last-child {
@@ -379,13 +415,22 @@ textarea {
 .searchForm {
   height: 9rem;
   flex: 1; }
+  .searchForm__icon {
+    fill: #bbb9bc;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 3.5rem;
+    top: 50%;
+    margin-top: -1.5rem; }
   .searchForm__input {
     height: 100%;
     width: 100%;
     border: 0;
-    font-size: 2.2rem;
-    padding: 2rem 2rem 2rem 2rem;
-    outline: 0; }
+    font-size: 2rem;
+    padding: 2rem 2rem 2rem 7rem;
+    outline: 0;
+    transition: .4s all; }
 
 .movie-header {
   height: 72rem;
