@@ -26,6 +26,15 @@ body {
   max-width: 70rem;
   display: block; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: linear-gradient(128deg, rgba(133, 133, 133, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); }
+
 *,
 html,
 body {
@@ -434,7 +443,7 @@ textarea {
 
 .movie-header {
   height: 72rem;
-  background: #333333 url("../assets/header-poster.jpg") no-repeat top left;
+  background: #333333 url("https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Dunkirk-movie-banner.jpg") no-repeat top left;
   background-size: cover;
   color: #ffffff;
   position: relative;
@@ -458,8 +467,8 @@ textarea {
     margin-bottom: 2.5rem; }
   .movie-header__playicon {
     fill: #ffffff;
-    width: 18rem;
-    height: 18rem;
+    width: 22rem;
+    height: 22rem;
     position: absolute;
     top: 50%;
     right: 20%;

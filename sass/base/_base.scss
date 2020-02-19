@@ -33,3 +33,13 @@ body {
     max-width: 70rem;
     display: block;
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(128deg, rgba(133,133,133,0.8) 0%, rgba(0,0,0,0.8) 100%);
+}

@@ -1,6 +1,6 @@
 .movie-header {
     height: 72rem;
-    background: $movie-black url("../assets/header-poster.jpg") no-repeat top left;
+    background: $movie-black url("https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Dunkirk-movie-banner.jpg") no-repeat top left;
     background-size: cover;
     color: $movie-white;
     position: relative;
@@ -28,8 +28,8 @@
     }
     &__playicon {
         fill: $movie-white;
-        width: 18rem;
-        height: 18rem;
+        width: 22rem;
+        height: 22rem;
         position: absolute;
         top: 50%;
         right: 20%;
