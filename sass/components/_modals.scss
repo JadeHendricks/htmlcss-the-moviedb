@@ -1,0 +1,60 @@
+.modal {
+  border-radius: 0.6rem;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  background-color: $movie-white;
+  width: 65rem;
+  z-index: 5;
+  @include absoluteCenter; 
+  top: 15%;
+  transform: translate(-50%, -15%);
+}
+
+.modalAuth {
+  color: $movie-grey;
+  &__padding {
+    padding: 0 2rem;
+  }
+  &__slug {
+    font-size: 1.8rem;
+    margin: 5rem 0;
+    color: currentColor;
+    text-align: center;
+  }
+  &__link {
+    font-weight: 700;
+    text-decoration: underline;
+    color: $movie-green;
+    cursor: pointer;
+  }
+  &__tabs {
+    display: flex;
+    color: $movie-white;
+    & button.tab {
+      flex: 1;
+      border: 0;
+      background-color: $movie-lightgrey;
+      color: $movie-grey;
+      text-transform: uppercase;
+      padding: 2.5rem 1.5rem;
+      font-weight: 700;
+      font-size: 1.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:focus {
+        outline: 0;
+      }
+      &:hover {
+        background-color: $movie-green;
+        color: $movie-white;
+      }
+    }
+    & button.active {
+      color: $movie-black;
+      background-color: $movie-white;
+      &:hover {
+        color: $movie-black;
+        background-color: $movie-white;
+      }
+    }
+  }
+}
