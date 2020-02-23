@@ -49,7 +49,7 @@
 
 .topnav {
     background-color: $movie-white;
-    box-shadow: inset 0.8rem 0 1rem -1rem $movie-lightgrey;
+    box-shadow: inset 0.8rem 0 1rem -1rem $movie-lightgrey, 0 8px 6px -6px $movie-lightgrey;
     height: 9rem;
     padding: 0 2rem 0 2rem;
     display: flex;

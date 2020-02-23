@@ -39,6 +39,35 @@ body {
     .movieDetails__title--smaller {
       font-size: 1.4rem; }
 
+.actorDetailSummary__imageContanier {
+  width: 100%;
+  height: 45rem;
+  position: relative; }
+  .actorDetailSummary__imageContanier::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7rem;
+    background-image: linear-gradient(to top, #e7e7e7, transparent);
+    position: absolute;
+    bottom: 0; }
+
+.actorDetailSummary__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.actorDetailSummary__name {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  z-index: 2; }
+
 .movieDetailSummary {
   flex: 0 0 32rem;
   background-color: #e7e7e7;
@@ -420,36 +449,36 @@ strong {
     font-size: 1.4rem;
     color: #868686; }
 
-.similarMovies__title {
+.moreMovies__title {
   margin-bottom: 2rem; }
 
-.similarMovies__titles {
+.moreMovies__titles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
 
-.similarMovies .movieCard {
+.moreMovies .movieCard {
   flex: 0 1 23%;
   margin-bottom: 2.5rem; }
-  .similarMovies .movieCard__title {
+  .moreMovies .movieCard__title {
     font-size: 1.6rem; }
-  .similarMovies .movieCard__buttons {
+  .moreMovies .movieCard__buttons {
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between; }
-    .similarMovies .movieCard__buttons button {
+    .moreMovies .movieCard__buttons button {
       padding: 1rem 0.5rem;
       width: 49%;
       font-size: 1.2rem; }
-      .similarMovies .movieCard__buttons button:last-child {
+      .moreMovies .movieCard__buttons button:last-child {
         margin-right: 0; }
-  .similarMovies .movieCard__information {
+  .moreMovies .movieCard__information {
     padding: 1rem; }
 
-.similarMovies .ratingholder {
+.moreMovies .ratingholder {
   height: 3rem;
   width: 3rem; }
-  .similarMovies .ratingholder__number {
+  .moreMovies .ratingholder__number {
     font-size: 1.2rem; }
 
 button[disabled] {
@@ -746,7 +775,7 @@ textarea {
 
 .topnav {
   background-color: #ffffff;
-  box-shadow: inset 0.8rem 0 1rem -1rem #bbb9bc;
+  box-shadow: inset 0.8rem 0 1rem -1rem #bbb9bc, 0 8px 6px -6px #bbb9bc;
   height: 9rem;
   padding: 0 2rem 0 2rem;
   display: flex;
