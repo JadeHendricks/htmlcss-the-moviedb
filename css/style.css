@@ -30,6 +30,14 @@ body {
   width: 100%; }
   .movieDetails__wrapper {
     display: flex; }
+  .movieDetails__title {
+    color: #333333;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem; }
+    .movieDetails__title--smaller {
+      font-size: 1.4rem; }
 
 .movieDetailSummary {
   flex: 0 0 32rem;
@@ -44,7 +52,7 @@ body {
     height: 100%;
     object-fit: cover; }
   .movieDetailSummary__wrapper {
-    padding: 5rem 4rem; }
+    padding: 4rem 3rem; }
 
 .movieDetailsMaincontent {
   flex: 1; }
@@ -100,6 +108,17 @@ body {
     width: 6rem; }
     .movieMain .ratingholder__number {
       font-size: 1.8rem; }
+
+.misc {
+  font-size: 1.4rem;
+  color: #333333;
+  padding: 3.5rem 0; }
+  .misc__box {
+    margin-bottom: 4rem; }
+    .misc__box:last-child {
+      margin-bottom: 0; }
+  .misc__info {
+    line-height: 1.4; }
 
 *,
 html,
@@ -622,6 +641,69 @@ textarea {
         color: #333333;
         background-color: #ffffff; }
 
+.reviews {
+  color: #333333;
+  font-size: 1.6rem; }
+  .reviews__review {
+    position: relative;
+    padding: 4rem 0;
+    border-bottom: 0.1rem dashed #bbb9bc; }
+  .reviews__title {
+    color: currentColor;
+    margin-bottom: 1rem;
+    width: calc(100% - 4.5rem); }
+  .reviews__date {
+    color: #868686;
+    display: block; }
+  .reviews__slug {
+    display: block;
+    margin-bottom: 1rem; }
+  .reviews__description {
+    font-size: 1.4rem; }
+    .reviews__description::after {
+      content: "";
+      clear: both;
+      display: table; }
+  .reviews .ratingholder {
+    position: absolute;
+    top: 4rem;
+    right: 0; }
+  .reviews__link {
+    display: block;
+    margin-top: 1rem;
+    float: right;
+    color: #3cb13e;
+    opacity: 0.7;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.6rem; }
+    .reviews__link:hover {
+      color: #3cb13e;
+      opacity: 1; }
+
+.category {
+  color: #868686;
+  margin-top: 3rem; }
+  .category__wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+  .category__pill {
+    border: 0.2rem solid currentColor;
+    color: currentColor;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    margin: 1rem 1.5rem 0 0;
+    font-weight: 700; }
+    .category__pill--large {
+      font-size: 1.6rem;
+      margin: 1rem 2rem 0 0;
+      padding: 1rem 2.5rem; }
+    .category__pill--white {
+      color: #ffffff; }
+
 .navigation {
   flex: 0 0 16rem;
   background-color: #ffffff;
@@ -690,7 +772,7 @@ textarea {
     margin-bottom: 2rem;
     font-weight: 700; }
   .movie-header__slug {
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     font-weight: 400;
     line-height: 1;
     text-transform: uppercase; }

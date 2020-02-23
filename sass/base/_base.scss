@@ -39,6 +39,16 @@ body {
     &__wrapper {
         display: flex;
     }
+    &__title {
+        color: $movie-black;
+        font-weight: 700;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        &--smaller {
+            font-size: 1.4rem;
+        }
+    }
 }
 .movieDetailSummary {
     flex: 0 0 32rem;
@@ -55,7 +65,7 @@ body {
         object-fit: cover;
     }
     &__wrapper {
-        padding: 5rem 4rem;
+        padding: 4rem 3rem;
     }
 }
 .movieDetailsMaincontent {
@@ -121,6 +131,21 @@ body {
         &__number {
             font-size: 1.8rem; 
         }
+    }
+}
+
+.misc {
+    font-size: 1.4rem;
+    color: $movie-black;
+    padding: 3.5rem 0;
+    &__box {
+        margin-bottom: 4rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__info {
+        line-height: 1.4;
     }
 }
 
