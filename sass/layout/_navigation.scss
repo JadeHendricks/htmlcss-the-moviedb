@@ -57,6 +57,21 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    &__account {
+        display: none;
+        //display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: 2rem;
+        & img {
+            margin-right: 1.5rem;
+            border-radius: 100%;
+        }
+        & span {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
     & button {
         margin-right: 1.5rem;
         &:last-child {

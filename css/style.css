@@ -874,6 +874,17 @@ textarea {
   justify-content: space-between;
   align-items: center;
   position: relative; }
+  .topnav__account {
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 2rem; }
+    .topnav__account img {
+      margin-right: 1.5rem;
+      border-radius: 100%; }
+    .topnav__account span {
+      font-size: 1.6rem;
+      font-weight: 700; }
   .topnav button {
     margin-right: 1.5rem; }
     .topnav button:last-child {
