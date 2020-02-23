@@ -1,2 +1,20 @@
-# Information
-I will write something here eventually
+# The Movie DBv2
+A site built through [The MovieDB API](https://www.themoviedb.org/), showing all the latest, most popular and upcoming movies through a lovely colourful UI. See all the actors, trailers, reviews and Similar movies all in one spot. Not seeing what you're looking for? Give the search a try!
+
+## Version 2
+A remake of the old site [The Movie DBv1](https://github.com/JadeHendricks/movie-db). Now focusing on better and more professional UI.
+Allowing the site to be more aligned with a real world complete application.
+
+## Installation
+```bash
+1 - npm install
+2 - npm run start
+3 - Explore
+```
+
+## Tools
+A site built with React.js, SASS and [The MovieDB API](https://www.themoviedb.org/).
+State is managed with the Context API.
+
+## View
+Will add on completion
