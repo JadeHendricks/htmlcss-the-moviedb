@@ -4,7 +4,8 @@
   background-color: $movie-white;
   width: 65rem;
   z-index: 5;
-  @include absoluteCenter; 
+  position: fixed;
+  left: 50%;
   top: 15%;
   transform: translate(-50%, -15%);
 }
@@ -19,12 +20,6 @@
     margin: 5rem 0;
     color: currentColor;
     text-align: center;
-  }
-  &__link {
-    font-weight: 700;
-    text-decoration: underline;
-    color: $movie-green;
-    cursor: pointer;
   }
   &__tabs {
     display: flex;

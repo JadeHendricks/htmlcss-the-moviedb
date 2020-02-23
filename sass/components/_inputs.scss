@@ -99,6 +99,14 @@ textarea {
   }
   & button {
     width: 100%;
-    margin: 4rem 0 3rem 0;
+    margin: 4rem 0 0.5rem 0;
   }
+}
+
+.auth-label {
+  font-size: 1.4rem;
+  color: $movie-red;
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
 }

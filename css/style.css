@@ -434,7 +434,14 @@ textarea {
       outline: 0; }
   .modalForm button {
     width: 100%;
-    margin: 4rem 0 3rem 0; }
+    margin: 4rem 0 0.5rem 0; }
+
+.auth-label {
+  font-size: 1.4rem;
+  color: #fe3434;
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem; }
 
 .modal {
   border-radius: 0.6rem;
@@ -442,10 +449,8 @@ textarea {
   background-color: #ffffff;
   width: 65rem;
   z-index: 5;
-  position: absolute;
-  top: 50%;
+  position: fixed;
   left: 50%;
-  transform: translate(-50%, -50%);
   top: 15%;
   transform: translate(-50%, -15%); }
 
@@ -458,11 +463,6 @@ textarea {
     margin: 5rem 0;
     color: currentColor;
     text-align: center; }
-  .modalAuth__link {
-    font-weight: 700;
-    text-decoration: underline;
-    color: #3cb13e;
-    cursor: pointer; }
   .modalAuth__tabs {
     display: flex;
     color: #ffffff; }
