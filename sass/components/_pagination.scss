@@ -4,16 +4,21 @@
   align-items: center;
   margin-top: 4rem;
   position: relative;
-  &__arrowLeft {
+  &__arrow {
     height: 2.5rem;
     width: 2.5rem;
     fill: $movie-black;
+    transition: all 0.2s;
+    transform-origin: center;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__arrowLeft {
     margin-right: 2rem;
   }
   &__arrowRight {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: $movie-black;
     margin-left: 2rem;
   }
   &__pill {

@@ -786,15 +786,18 @@ textarea {
   align-items: center;
   margin-top: 4rem;
   position: relative; }
-  .pagination__arrowLeft {
+  .pagination__arrow {
     height: 2.5rem;
     width: 2.5rem;
     fill: #333333;
+    transition: all 0.2s;
+    transform-origin: center;
+    cursor: pointer; }
+    .pagination__arrow:hover {
+      transform: scale(1.1); }
+  .pagination__arrowLeft {
     margin-right: 2rem; }
   .pagination__arrowRight {
-    height: 2.5rem;
-    width: 2.5rem;
-    fill: #333333;
     margin-left: 2rem; }
   .pagination__pill {
     color: #868686;
