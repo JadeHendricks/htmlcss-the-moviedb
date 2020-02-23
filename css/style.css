@@ -780,6 +780,47 @@ textarea {
     .category__pill--white {
       color: #ffffff; }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  position: relative; }
+  .pagination__arrowLeft {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #333333;
+    margin-right: 2rem; }
+  .pagination__arrowRight {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #333333;
+    margin-left: 2rem; }
+  .pagination__pill {
+    color: #868686;
+    font-size: 1.4rem;
+    border: 0.1rem solid #e7e7e7;
+    background-color: #f9f9f9;
+    transition: all 0.2s;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.6rem;
+    line-height: 4rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    cursor: pointer; }
+    .pagination__pill:hover {
+      color: #ffffff;
+      background-color: #3cb13e; }
+  .pagination .active {
+    color: #ffffff;
+    border: 0.1rem solid #3cb13e;
+    background-color: #3cb13e; }
+    .pagination .active:hover {
+      color: #ffffff;
+      background-color: #3cb13e; }
+
 .navigation {
   flex: 0 0 16rem;
   background-color: #ffffff;

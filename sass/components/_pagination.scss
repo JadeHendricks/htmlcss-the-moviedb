@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  position: relative;
+  &__arrowLeft {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $movie-black;
+    margin-right: 2rem;
+  }
+  &__arrowRight {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $movie-black;
+    margin-left: 2rem;
+  }
+  &__pill {
+    color: $movie-grey;
+    font-size: 1.4rem;
+    border: 0.1rem solid $movie-pagination-grey;
+    background-color: $movie-pagination-lightgrey;
+    transition: all 0.2s;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.6rem;
+    line-height: 4rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    &:hover {
+      color: $movie-white;
+      background-color: $movie-green;
+    }
+  }
+  & .active {
+    color: $movie-white;
+    border: 0.1rem solid $movie-green;
+    background-color: $movie-green;
+    &:hover {
+      color: $movie-white;
+      background-color: $movie-green;
+    }
+  }
+}
