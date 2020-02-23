@@ -88,6 +88,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   &__info {
     padding: 2rem;
@@ -140,5 +142,44 @@
     &__number {
       font-size: 1.2rem;
     }
+  }
+}
+
+.cardSearch {
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.05), 0 0.5rem 1rem rgba(0,0,0,0.12);
+  flex: 0 1 18%;
+  margin-bottom: 2.5rem;
+  background-color: $movie-white;
+  font-size: 1.4rem;
+  &__imageholder {
+    height: 25rem;
+    width: 100%;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &__info {
+    padding: 2rem;
+    position: relative;
+  }
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: calc(100% - 4rem);
+  }
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+  & .ratingholder {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 }

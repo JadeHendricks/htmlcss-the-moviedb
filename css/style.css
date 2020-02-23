@@ -149,6 +149,19 @@ body {
   .misc__info {
     line-height: 1.4; }
 
+.searchResults {
+  padding: 6rem 0; }
+  .searchResults__title {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 6rem; }
+    .searchResults__title span {
+      color: #3cb13e; }
+  .searchResults__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
 *,
 html,
 body {
@@ -439,7 +452,9 @@ strong {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0.6rem; }
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .castCard__info {
     padding: 2rem; }
   .castCard__realname {
@@ -480,6 +495,38 @@ strong {
   width: 3rem; }
   .moreMovies .ratingholder__number {
     font-size: 1.2rem; }
+
+.cardSearch {
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05), 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  flex: 0 1 18%;
+  margin-bottom: 2.5rem;
+  background-color: #ffffff;
+  font-size: 1.4rem; }
+  .cardSearch__imageholder {
+    height: 25rem;
+    width: 100%; }
+  .cardSearch__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .cardSearch__info {
+    padding: 2rem;
+    position: relative; }
+  .cardSearch__title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    width: calc(100% - 4rem); }
+  .cardSearch__description {
+    font-size: 1.4rem;
+    line-height: 1.4; }
+  .cardSearch .ratingholder {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
 
 button[disabled] {
   background-color: #bbb9bc;
@@ -742,6 +789,7 @@ textarea {
   font-weight: 700; }
   .navigation__logo {
     color: #333333;
+    height: 9rem;
     padding: 2.8rem 0;
     font-size: 2.8rem;
     border-bottom: 0.1rem solid #e7e7e7;
