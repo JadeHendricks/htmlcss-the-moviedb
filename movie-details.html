@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <title>The Movie DB V2 - Movie Details</title>
+    </head>
+    <body class="body">
+        <div class="overlay"></div>
+        <nav class="navigation">
+            <h3 class="navigation__logo">MDBv2<span>&#149;</span></h3>
+            <div class="navigation__wrapper">
+                <a class="navigation__node active">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-video"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">Movies</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-desktop"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">TV Series</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-presentation"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">New Arrivals</h5>
+                </a>
+                <a class="navigation__node">
+                    <svg class="navigation__icon">
+                        <use xlink:href="assets/sprite.svg#icon-clock"></use>
+                    </svg>
+                    <h5 class="navigation__nodename">Coming Soon</h5>
+                </a>
+            </div>
+        </nav>
+        <main class="main-content">
+
+            <nav class="topnav">
+                <form class="searchForm">
+                    <svg class="searchForm__icon">
+                        <use xlink:href="assets/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <input class="searchForm__input" type="search" name="search" placeholder="Search for Movies or TV Series" value="">
+                </form>
+                <div class="topnav__buttons">
+                    <button class="button button--green button--skeleton">Login</button>
+                    <button class="button button--green">Sign up</button>
+                </div>
+            </nav>
+            <section class="movieDetails">
+
+                <div class="movieDetails__wrapper">
+                    <div class="movieDetailSummary">
+                        <div class="movieDetailSummary__imageContanier">
+                            <img src="./assets/06_movie-profile-A_03.jpg" class="movieDetailSummary__image" alt="Movie Poster" title="Movie Poster">
+                        </div>
+                        <div class="movieDetailSummary__wrapper">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam obcaecati ab illum aspernatur nemo qui iusto alias nihil. 
+                            Id odit quisquam dolore officiis nihil quibusdam eaque provident, unde quae cumque aperiam officia praesentium eligendi molestiae. 
+                            Aliquam nihil officia perspiciatis dolor? Voluptatibus, corrupti rem delectus iure reiciendis beatae veritatis explicabo soluta!
+                        </div>
+                    </div>
+    
+                    <div class="movieDetailsMaincontent">
+                        <header class="movieDetailHeader">
+                            <svg class="movieDetailHeader__playicon">
+                                <use xlink:href="assets/sprite.svg#icon-play2"></use>
+                            </svg>
+                            <div class="movieDetailHeader__media">
+                                <h3 class="movieDetailHeader__title">Media</h3>
+                                <div class="movieDetailHeader__videos">
+                                    <img src="./assets/06_movie-profile-A_07.jpg" alt="Movie media" title="Movie media">
+                                    <img src="./assets/06_movie-profile-A_07.jpg" alt="Movie media" title="Movie media">
+                                    <img src="./assets/06_movie-profile-A_07.jpg" alt="Movie media" title="Movie media">
+                                    <img src="./assets/06_movie-profile-A_07.jpg" alt="Movie media" title="Movie media">
+                                </div>
+                            </div>
+                        </header>
+                        <main class="movieMain">
+
+                            <div class="ratingholder">
+                                <span class="ratingholder__number">8.6</span>
+                            </div>
+
+                            <h2 class="movieMain__title">Baby Driver <span>(2017)</span></h2>
+                            <div class="movieMain__storyline">
+                                <h3 class="marginBottom10">Storyline</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi aliquam repellendus ipsam ducimus temporibus suscipit quos saepe 
+                                    delectus totam omnis autem libero, necessitatibus mollitia debitis animi vel tenetur molestiae et. Nam inventore reiciendis aperiam natus deleniti? 
+                                    Excepturi doloribus et ea vero, perferendis tenetur vel nostrum blanditiis nisi voluptas quasi ipsam ullam harum est corporis suscipit numquam eligendi 
+                                    expedita consequuntur quas ad ratione at? Vel incidunt omnis adipisci reprehenderit. Voluptates voluptate dolorum vitae minima omnis adipisci provident 
+                                    vero, in eius a molestias eveniet corporis quos illo praesentium aut magni eum voluptatem optio iste incidunt! Tempora quo repellat ullam asperiores et.
+                                </p>
+                            </div>
+
+                            <div class="cast">
+                                <h3 class="cast__title">The Cast</h3>
+                                <div class="cast__wrapper">
+                                    <div class="castCard">
+                                        <div class="castCard__imageholder">
+                                            <img class="castCard__image" src="./assets/06_movie-profile-A_10.jpg" alt="Person" title="person">
+                                        </div>
+                                        <div class="castCard__info">
+                                            <h5 class="castCard__realname">Jamie Foxx</h5>
+                                            <span class="castCard__as">Bats</span>
+                                        </div>
+                                    </div>
+                                    <div class="castCard">
+                                        <div class="castCard__imageholder">
+                                            <img class="castCard__image" src="./assets/06_movie-profile-A_10.jpg" alt="Person" title="person">
+                                        </div>
+                                        <div class="castCard__info">
+                                            <h5 class="castCard__realname">Jamie Foxx</h5>
+                                            <span class="castCard__as">Bats</span>
+                                        </div>
+                                    </div>
+                                    <div class="castCard">
+                                        <div class="castCard__imageholder">
+                                            <img class="castCard__image" src="./assets/06_movie-profile-A_10.jpg" alt="Person" title="person">
+                                        </div>
+                                        <div class="castCard__info">
+                                            <h5 class="castCard__realname">Jamie Foxx</h5>
+                                            <span class="castCard__as">Bats</span>
+                                        </div>
+                                    </div>
+                                    <div class="castCard">
+                                        <div class="castCard__imageholder">
+                                            <img class="castCard__image" src="./assets/06_movie-profile-A_10.jpg" alt="Person" title="person">
+                                        </div>
+                                        <div class="castCard__info">
+                                            <h5 class="castCard__realname">Jamie Foxx</h5>
+                                            <span class="castCard__as">Bats</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <section class="similarMovies">
+                                <h3 class="similarMovies__title">Similar Movies</h3>
+                                <div class="similarMovies__titles">
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="movieCard">
+                                        <div class="movieCard__image">
+                                            <img src="./assets/movie-poster.png" class="movieCard__imagesrc" />
+                                        </div>
+                                        <div class="movieCard__information">
+                                            <h5 class="movieCard__title">Where The Wild Things are headed this way</h5>
+                                            <div class="ratingholder">
+                                                <span class="ratingholder__number">8.6</span>
+                                            </div>
+                                            <p class="movieCard__date">12 August 2020</p>
+                                            <div class="movieCard__buttons">
+                                                <button class="button button--green">Watch Trailer</button>
+                                                <button class="button button--green button--skeleton">View More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                        </main>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

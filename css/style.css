@@ -26,14 +26,80 @@ body {
   max-width: 70rem;
   display: block; }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  background: linear-gradient(128deg, rgba(133, 133, 133, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); }
+.movieDetails {
+  width: 100%; }
+  .movieDetails__wrapper {
+    display: flex; }
+
+.movieDetailSummary {
+  flex: 0 0 32rem;
+  background-color: #e7e7e7;
+  min-height: 100vh;
+  box-shadow: 0.8rem 0 1rem -1rem #bbb9bc; }
+  .movieDetailSummary__imageContanier {
+    width: 100%;
+    height: 45rem; }
+  .movieDetailSummary__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .movieDetailSummary__wrapper {
+    padding: 5rem 4rem; }
+
+.movieDetailsMaincontent {
+  flex: 1; }
+
+.movieDetailHeader {
+  background: #333333 url("https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Dunkirk-movie-banner.jpg") no-repeat top left;
+  padding: 4rem 10rem;
+  height: 80rem;
+  position: relative;
+  color: #ffffff; }
+  .movieDetailHeader__playicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    fill: #ffffff;
+    width: 15rem;
+    height: 15rem;
+    transition: all .5s; }
+    .movieDetailHeader__playicon:hover {
+      fill: #3cb13e;
+      transform: translate(-50%, -40%) scale(1.2) rotate(360deg);
+      cursor: pointer; }
+  .movieDetailHeader__media {
+    position: absolute;
+    bottom: 4rem; }
+  .movieDetailHeader__title {
+    color: currentColor;
+    margin-bottom: 1.2rem; }
+  .movieDetailHeader__videos {
+    display: flex;
+    justify-content: space-between; }
+    .movieDetailHeader__videos img {
+      margin-right: 2.5rem; }
+      .movieDetailHeader__videos img:last-child {
+        margin-right: 0; }
+
+.movieMain {
+  padding: 7rem 10rem;
+  position: relative; }
+  .movieMain__title {
+    font-weight: 700; }
+    .movieMain__title span {
+      color: #bbb9bc; }
+  .movieMain__storyline {
+    margin-top: 4rem; }
+  .movieMain .ratingholder {
+    position: absolute;
+    right: 10rem;
+    top: 4rem;
+    height: 6rem;
+    width: 6rem; }
+    .movieMain .ratingholder__number {
+      font-size: 1.8rem; }
 
 *,
 html,
@@ -299,6 +365,73 @@ strong {
     border-radius: 0.6rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
+
+.cast {
+  margin: 7rem 0; }
+  .cast__title {
+    margin-bottom: 2rem; }
+  .cast__wrapper {
+    display: flex; }
+
+.castCard {
+  border-radius: 0.6rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05), 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  flex: 0 1 20%;
+  margin-right: 6.66666%;
+  margin-bottom: 2.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1.4rem; }
+  .castCard:last-child {
+    margin-right: 0; }
+  .castCard__imageholder {
+    width: 100%;
+    height: 36rem; }
+  .castCard__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem; }
+  .castCard__info {
+    padding: 2rem; }
+  .castCard__realname {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem; }
+  .castCard__as {
+    font-size: 1.4rem;
+    color: #868686; }
+
+.similarMovies__title {
+  margin-bottom: 2rem; }
+
+.similarMovies__titles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.similarMovies .movieCard {
+  flex: 0 1 23%;
+  margin-bottom: 2.5rem; }
+  .similarMovies .movieCard__title {
+    font-size: 1.6rem; }
+  .similarMovies .movieCard__buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between; }
+    .similarMovies .movieCard__buttons button {
+      padding: 1rem 0.5rem;
+      width: 49%;
+      font-size: 1.2rem; }
+      .similarMovies .movieCard__buttons button:last-child {
+        margin-right: 0; }
+  .similarMovies .movieCard__information {
+    padding: 1rem; }
+
+.similarMovies .ratingholder {
+  height: 3rem;
+  width: 3rem; }
+  .similarMovies .ratingholder__number {
+    font-size: 1.2rem; }
 
 button[disabled] {
   background-color: #bbb9bc;
