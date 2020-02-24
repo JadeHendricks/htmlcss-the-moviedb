@@ -10,69 +10,23 @@ button[disabled] {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all 0.2s;
     &--green {
         color: $movie-white;
         background-color: $movie-green;
+        &:hover {
+            background-color: $movie-grey;
+        }
     }
     &--skeleton {
         background-color: transparent;
         color: $movie-green;
         padding: 1rem 3.3rem;
         border: 0.2rem solid $movie-green;
+        &:hover {
+            background-color: $movie-grey;
+            color: $movie-white;
+            border: 0.2rem solid $movie-grey;
+        }
     }
 }
-
-// body {
-//     margin: 0;
-//     padding: 0;
-//     background: #f1f1f1;
-//   }
-  
-//   #btn {
-//     width: 200px;
-//     height: 60px;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     background: #ffc107;
-//     cursor: pointer;
-//     border-radius: 5px;
-//     /* this will hide the "Hover Me" goes out of the btn container */
-//     overflow: hidden;
-//   }
-  
-//   #btn:before {
-//     color: white;
-//     font-family: sans-serif;
-//     /* creates the content for the btn */
-//     content: 'Hover Me';
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%,-50%);
-//     font-size: 20px;
-//     transition: all 0.5s;
-//   }
-  
-//   #btn:hover:before {
-//     top: -30px;
-//   }
-  
-//   #btn:after {
-//     font-family: 'Ionicons';
-//     /* this content info is from the Ionicons website v2 cheatsheet */
-//     content: '\25B6';
-//     font-size: 40px;
-//     color: #f44336;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%,-50%);
-//     top: 140%;
-//     transition: all 0.5s;
-//   }
-  
-//   #btn:hover:after {
-//     top: 50%;
-//   }
