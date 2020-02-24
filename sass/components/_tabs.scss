@@ -1,0 +1,33 @@
+.switchTabs {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2rem 0 8rem 0;
+  &__tab {
+    position: relative;
+    border-radius: 0.6rem;
+    background-color: $movie-white;
+    background-clip: padding-box;
+    flex: 1;
+    border: 0.2rem solid $movie-green;
+    padding: 1.2rem 2rem;
+    margin-right: 4rem;
+    font-size: 1.8rem;
+    color: $movie-green;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(to bottom right, #3cb13e, #059307);
+      color: $movie-white;
+    }
+    &.active {
+      background: linear-gradient(to bottom right, #3cb13e, #059307);
+      color: $movie-white;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
