@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+        <title>The Movie DB V2</title>
+    </head>
+    <body class="body">
+            <nav class="navigation">
+                    <h3 class="navigation__logo">MDBv2<span>&#149;</span></h3>
+                </nav>
+                <main class="main-content">
+        
+                    <nav class="topnav">
+                        <form class="searchForm">
+                            <svg class="searchForm__icon">
+                                <use xlink:href="assets/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                            <input class="searchForm__input" type="search" name="search" placeholder="Search for Movies or TV Series" value="">
+                        </form>
+                        <div class="topnav__buttons">
+                            <button class="button button--green button--skeleton">Login</button>
+                            <button class="button button--green">Sign up</button>
+                        </div>
+                        <div class="topnav__account">
+                            <img src="./assets/x_03.jpg" alt="person" title="person">
+                            <span>Kevin Adriana</span>
+                        </div>
+                    </nav>
+                    <div class="accountSettings">
+                            <div class="accountSettings__banner">
+                                <h1 class="accountSettings__title">Edit Profile</h1>
+                            </div>
+                            <form class="accountform">
+                                <div class="accountform__container">
+                                    <div class="accountform__box">
+                                        <label id="Username" class="accountform__label">Username</label>
+                                        <input type="text" name="Username" class="accountform__input" placeholder="Username">
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="firstname" class="accountform__label">First Name</label>
+                                        <input type="text" name="firstname" class="accountform__input" placeholder="First name">
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="lastName" class="accountform__label">Last Name</label>
+                                        <input type="text" name="lastName" class="accountform__input" placeholder="Last name">
+                                        <span class="auth-label">this is an auth message</span>
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="accountemailAddress" class="accountform__label">Email Address *</label>
+                                        <input type="text" name="accountemailAddress" class="accountform__input" placeholder="Email address">
+                                        <span class="auth-label">this is an auth message</span>
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="currentPassword" class="accountform__label">Current password</label>
+                                        <input type="text" name="currentPassword" class="accountform__input" placeholder="Current password">
+                                        <span class="auth-label">this is an auth message</span>
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="newpassword" class="accountform__label">New password</label>
+                                        <input type="text" name="newpassword" class="accountform__input" placeholder="New password">
+                                    </div>
+                                    <div class="accountform__box">
+                                        <label id="biography" class="accountform__label">Biography</label>
+                                        <textarea name="biography" class="accountform__textarea" placeholder="Biography"></textarea>
+                                    </div>
+                                    <button class="button button--green">Update Profile</button>
+                                </div>
+                            </form>
+                        </div>
+                </main>
+    </body>
+</html>
