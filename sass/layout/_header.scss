@@ -46,6 +46,12 @@
         bottom: 10rem;
         right: 10rem;
       }
+    & button {
+        box-shadow: 0 12px 28px rgba(61,177,61,.38);
+        &:hover {
+            box-shadow: none;
+        }
+    }
 }
 
 .movie-header-starring {
