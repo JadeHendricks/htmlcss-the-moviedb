@@ -114,9 +114,11 @@ body {
     margin-bottom: 1.2rem; }
   .movieDetailHeader__videos {
     display: flex;
-    justify-content: space-between; }
+    justify-content: flex-start;
+    flex-wrap: wrap; }
     .movieDetailHeader__videos img {
-      margin-right: 2.5rem; }
+      flex: 0 1 18%;
+      margin: 2.5rem 2.5rem 0 0; }
       .movieDetailHeader__videos img:last-child {
         margin-right: 0; }
 
@@ -1175,7 +1177,9 @@ textarea {
     .topnav__buttons {
       width: 100%;
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-between; }
+      .topnav__buttons button {
+        width: 100%; } }
 
 @media screen and (max-width: 520px) {
   .navigation__wrapper {

@@ -132,9 +132,11 @@ body {
     }
     &__videos {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         & img {
-            margin-right: 2.5rem;
+            flex: 0 1 18%;
+            margin: 2.5rem 2.5rem 0 0;
             &:last-child {
                 margin-right: 0;
             }
