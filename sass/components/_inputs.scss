@@ -214,6 +214,23 @@ textarea {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .accountSettings {
+    &__banner {
+        padding: 6rem;
+    }
+    &__title {
+        font-size: 2.8rem;
+    }
+    .accountform {
+        margin: 6rem 0;
+        &__container {
+            padding: 0 2rem;
+        } 
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .searchForm {
     height: 9rem;

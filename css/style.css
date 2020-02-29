@@ -820,6 +820,16 @@ textarea {
   .searchForm {
     width: 100%; } }
 
+@media screen and (max-width: 991px) {
+  .accountSettings__banner {
+    padding: 6rem; }
+  .accountSettings__title {
+    font-size: 2.8rem; }
+  .accountSettings .accountform {
+    margin: 6rem 0; }
+    .accountSettings .accountform__container {
+      padding: 0 2rem; } }
+
 @media screen and (max-width: 767px) {
   .searchForm {
     height: 9rem;
