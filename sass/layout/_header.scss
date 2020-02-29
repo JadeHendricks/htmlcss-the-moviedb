@@ -69,3 +69,45 @@
         border-radius: 3rem;
     }
 }
+
+@media screen and (max-width: 1660px) {
+    .movie-header {
+        height: 72rem;
+        background-size: cover;
+        color: $movie-white;
+        position: relative;
+        padding: 10rem;
+        line-height: 1;
+        &__playicon {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .movie-header {
+        height: 60rem;
+        padding: 4rem 3rem;
+        text-align: center;
+        &__date {
+            font-size: 1.2rem;
+        }
+        &__slug {
+            font-size: 2.4rem;
+        }
+        &__title {
+            font-size: 3rem;
+            margin: 3rem 0 1rem 0;  
+        }
+        &__description {
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+        &__playicon {
+            display: none;
+        }
+    }
+    .movie-header-starring__wrapper {
+        justify-content: center;
+    }
+}

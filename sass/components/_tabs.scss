@@ -31,3 +31,18 @@
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .switchTabs {
+    margin: 0 0 4rem 0;
+    &__tab {
+      flex: 1;
+      border: 0.1rem solid $movie-green;
+      padding: 1rem 1.5rem;
+      margin-right: 2rem;
+      font-size: 1.4rem;
+      color: $movie-green;
+      cursor: pointer;
+    }
+  }
+}

@@ -162,6 +162,21 @@ body {
     justify-content: space-between;
     flex-wrap: wrap; }
 
+.overlay {
+  display: none;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: linear-gradient(128deg, rgba(133, 133, 133, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); }
+
+@media screen and (max-width: 1200px) {
+  .body {
+    flex-direction: column-reverse; } }
+
 *,
 html,
 body {
@@ -524,6 +539,52 @@ strong {
     top: 1rem;
     right: 1rem; }
 
+@media screen and (max-width: 1660px) {
+  .movieSection {
+    padding: 6rem 2rem; }
+  .movieCard {
+    flex: 0 1 22%;
+    margin-bottom: 4rem;
+    font-size: 1.2rem; }
+    .movieCard__image {
+      height: 28rem; }
+    .movieCard__information {
+      padding: 1rem; }
+    .movieCard__buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-between; }
+      .movieCard__buttons button {
+        width: 49%;
+        font-size: 1rem; }
+    .movieCard__title {
+      margin: 0 4.5rem 2rem 0;
+      height: 6rem; } }
+
+@media screen and (max-width: 1200px) {
+  .movieCard {
+    flex: 0 1 32%;
+    margin-bottom: 2rem;
+    font-size: 1rem; }
+    .movieCard__image {
+      height: 20rem; } }
+
+@media screen and (max-width: 767px) {
+  .movieCard {
+    flex: 0 1 48%;
+    margin-bottom: 3rem; }
+    .movieCard__image {
+      height: 20rem; } }
+
+@media screen and (max-width: 520px) {
+  .movieSection__titles {
+    flex-direction: column; }
+  .movieCard {
+    flex: 1;
+    margin-bottom: 2rem; }
+    .movieCard__image {
+      height: 22rem; } }
+
 button[disabled] {
   background-color: #bbb9bc;
   cursor: not-allowed; }
@@ -755,6 +816,27 @@ textarea {
     margin-top: 5rem;
     margin-left: auto; }
 
+@media screen and (max-width: 1200px) {
+  .searchForm {
+    width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .searchForm {
+    height: 9rem;
+    width: 100%; }
+    .searchForm__icon {
+      left: 3rem;
+      top: auto;
+      bottom: 5rem; }
+    .searchForm__input {
+      font-size: 1.5rem;
+      padding: 2rem 2rem 2rem 4.5rem; } }
+
+@media screen and (max-width: 520px) {
+  .searchForm__icon {
+    height: 2.5rem;
+    width: 2.5rem; } }
+
 .modal {
   border-radius: 0.6rem;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -864,6 +946,10 @@ textarea {
     .category__pill--white {
       color: #ffffff; }
 
+@media screen and (max-width: 520px) {
+  .category__wrapper {
+    justify-content: center; } }
+
 .pagination {
   display: flex;
   justify-content: center;
@@ -908,6 +994,20 @@ textarea {
       color: #ffffff;
       background-color: #3cb13e; }
 
+@media screen and (max-width: 520px) {
+  .pagination__arrow {
+    height: 1.5rem;
+    width: 1.5rem; }
+  .pagination__arrowLeft {
+    margin-right: 1rem; }
+  .pagination__arrowRight {
+    margin-left: 1rem; }
+  .pagination__pill {
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem; } }
+
 .switchTabs {
   display: flex;
   justify-content: flex-start;
@@ -936,6 +1036,18 @@ textarea {
       color: #ffffff; }
     .switchTabs__tab:last-child {
       margin-right: 0; }
+
+@media screen and (max-width: 520px) {
+  .switchTabs {
+    margin: 0 0 4rem 0; }
+    .switchTabs__tab {
+      flex: 1;
+      border: 0.1rem solid #3cb13e;
+      padding: 1rem 1.5rem;
+      margin-right: 2rem;
+      font-size: 1.4rem;
+      color: #3cb13e;
+      cursor: pointer; } }
 
 .navigation {
   flex: 0 0 16rem;
@@ -1003,6 +1115,74 @@ textarea {
     .topnav button:last-child {
       margin-right: 0; }
 
+@media screen and (max-width: 1200px) {
+  .navigation {
+    background-color: #3cb13e;
+    flex: 1;
+    box-shadow: 0 -8px 10px -8px #bbb9bc; }
+    .navigation__logo {
+      display: none; }
+    .navigation__wrapper {
+      flex-direction: row;
+      justify-content: space-around; }
+    .navigation__node {
+      border: 0;
+      color: #ffffff;
+      padding: 2rem 0; }
+      .navigation__node.active {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: underline; }
+      .navigation__node:hover {
+        color: #ffffff;
+        cursor: pointer; }
+    .navigation__icon {
+      height: 3.5rem;
+      width: 3.5rem; }
+  .topnav {
+    box-shadow: 0 8px 10px -8px #bbb9bc; } }
+
+@media screen and (max-width: 767px) {
+  .topnav {
+    box-shadow: 0 8px 10px -8px #bbb9bc;
+    height: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: space-between;
+    position: relative; }
+    .topnav__account {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      margin-right: 2rem; }
+      .topnav__account img {
+        margin-right: 1.5rem;
+        border-radius: 100%; }
+      .topnav__account span {
+        font-size: 1.6rem;
+        font-weight: 700; }
+    .topnav__buttons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; } }
+
+@media screen and (max-width: 520px) {
+  .navigation__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5rem; }
+  .navigation__node {
+    padding: 1.5rem 0; }
+    .navigation__node.active {
+      color: #ffffff; }
+  .navigation__icon {
+    height: 3rem;
+    width: 3rem; }
+  .navigation__nodename {
+    font-weight: 100;
+    font-size: 1.2rem; } }
+
 .movie-header {
   height: 72rem;
   background: #333333 url("https://2l7g9kgsh281akevs49v281d-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/Dunkirk-movie-banner.jpg") no-repeat top left;
@@ -1060,3 +1240,34 @@ textarea {
   .movie-header-starring__image {
     margin-right: 1.5rem;
     border-radius: 3rem; }
+
+@media screen and (max-width: 1660px) {
+  .movie-header {
+    height: 72rem;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+    padding: 10rem;
+    line-height: 1; }
+    .movie-header__playicon {
+      display: none; } }
+
+@media screen and (max-width: 520px) {
+  .movie-header {
+    height: 60rem;
+    padding: 4rem 3rem;
+    text-align: center; }
+    .movie-header__date {
+      font-size: 1.2rem; }
+    .movie-header__slug {
+      font-size: 2.4rem; }
+    .movie-header__title {
+      font-size: 3rem;
+      margin: 3rem 0 1rem 0; }
+    .movie-header__description {
+      line-height: 1.8;
+      margin-bottom: 2.5rem; }
+    .movie-header__playicon {
+      display: none; }
+  .movie-header-starring__wrapper {
+    justify-content: center; } }

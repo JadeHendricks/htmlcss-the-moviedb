@@ -197,13 +197,21 @@ body {
         flex-wrap: wrap;
     }
 }
-// .overlay {
-//     position: fixed;
-//     overflow: hidden;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: 2;
-//     background: linear-gradient(128deg, rgba(133,133,133,0.8) 0%, rgba(0,0,0,0.8) 100%);
-// }
+
+.overlay {
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(128deg, rgba(133,133,133,0.8) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+@media screen and (max-width: 1200px) {
+    .body {
+        flex-direction: column-reverse;
+    }
+}

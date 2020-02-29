@@ -24,3 +24,11 @@
       }
   }
 }
+
+@media screen and (max-width: 520px) { 
+  .category {
+    &__wrapper {
+      justify-content: center;
+    }
+  } 
+}

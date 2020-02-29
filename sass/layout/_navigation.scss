@@ -79,3 +79,95 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        background-color: $movie-green;
+        flex: 1;
+        box-shadow: 0 -8px 10px -8px $movie-lightgrey;
+        &__logo {
+            display: none;
+        }
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__node {
+            border: 0;
+            color: $movie-white;
+            padding: 2rem 0;
+            &.active {
+                color: $movie-white; 
+                font-weight: 700; 
+                text-decoration: underline;
+            }
+            &:hover {
+                color: $movie-white;
+                cursor: pointer;
+            }
+        }
+        &__icon {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+
+    .topnav {
+        box-shadow: 0 8px 10px -8px $movie-lightgrey;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .topnav {
+        box-shadow: 0 8px 10px -8px $movie-lightgrey;
+        height: auto;
+        padding: 2rem 2rem 2rem 2rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: space-between;
+        position: relative;
+        &__account {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            & img {
+                margin-right: 1.5rem;
+                border-radius: 100%;
+            }
+            & span {
+                font-size: 1.6rem;
+                font-weight: 700;
+            }
+        }
+        &__buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .navigation {
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+        }
+        &__node {
+            padding: 1.5rem 0;
+            &.active {
+                color: $movie-white;  
+            }
+        }
+        &__icon {
+            height: 3rem;
+            width: 3rem;
+        }
+        &__nodename {
+            font-weight: 100;
+            font-size: 1.2rem;
+        }
+    }
+}

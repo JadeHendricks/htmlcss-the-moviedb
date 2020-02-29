@@ -180,3 +180,71 @@
     right: 1rem;
   }
 }
+
+@media screen and (max-width: 1660px) {
+  .movieSection {
+    padding: 6rem 2rem;
+  }
+  
+  .movieCard {
+    flex: 0 1 22%;
+    margin-bottom: 4rem;
+    font-size: 1.2rem;
+    &__image {
+      height: 28rem;
+    }
+    &__information {
+      padding: 1rem;
+    }
+    &__buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      & button {
+        width: 49%;
+        font-size: 1rem;
+      }
+    }
+    &__title {
+      margin: 0 4.5rem 2rem 0;
+      height: 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .movieCard {
+    flex: 0 1 32%;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    &__image {
+      height: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .movieCard {
+    flex: 0 1 48%;
+    margin-bottom: 3rem;
+    &__image {
+      height: 20rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .movieSection {
+    &__titles {
+      flex-direction: column;
+    }
+  }
+
+  .movieCard {
+    flex: 1;
+    margin-bottom: 2rem;
+    &__image {
+      height: 22rem;
+    }
+  }
+}

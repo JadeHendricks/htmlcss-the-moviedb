@@ -50,3 +50,24 @@
     }
   }
 }
+
+@media screen and (max-width: 520px) {
+  .pagination {
+    &__arrow {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+    &__arrowLeft {
+      margin-right: 1rem;
+    }
+    &__arrowRight {
+      margin-left: 1rem;
+    }
+    &__pill {
+      font-size: 1.2rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
