@@ -185,7 +185,15 @@ body {
 
 @media screen and (max-width: 1200px) {
   .body {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .movieDetailHeader {
+    height: 50rem; }
+    .movieDetailHeader__playicon {
+      top: 50%; }
+    .movieDetailHeader__videos {
+      display: none; }
+    .movieDetailHeader__media {
+      display: none; } }
 
 @media screen and (max-width: 991px) {
   .movieMain__title {
@@ -201,23 +209,7 @@ body {
   .movieDetailSummary__image {
     object-fit: contain; }
   .movieDetailHeader {
-    height: 40rem;
-    position: relative;
-    color: #ffffff; }
-    .movieDetailHeader__playicon {
-      top: 50%; }
-    .movieDetailHeader__media {
-      position: absolute;
-      bottom: 4rem;
-      display: none; }
-    .movieDetailHeader__videos {
-      display: none;
-      justify-content: flex-start;
-      flex-wrap: wrap; }
-      .movieDetailHeader__videos img {
-        width: 100%; }
-        .movieDetailHeader__videos img:last-child {
-          margin-right: 0; } }
+    height: 40rem; } }
 
 @media screen and (max-width: 767px) {
   .searchResults {
@@ -225,6 +217,12 @@ body {
     .searchResults__title {
       font-size: 3rem;
       margin-bottom: 4rem; } }
+
+@media screen and (max-width: 520px) {
+  .movieDetailSummary__image {
+    object-fit: cover; }
+  .movieDetailSummary__wrapper .category__wrapper {
+    justify-content: flex-start; } }
 
 *,
 html,
@@ -720,7 +718,9 @@ strong {
     .cardSearch__description {
       font-size: 1.4rem; }
   .castCard {
-    flex: 0 1 100%; } }
+    flex: 0 1 100%; }
+  .actorDetailSummary__image {
+    object-fit: cover; } }
 
 button[disabled] {
   background-color: #bbb9bc;
@@ -972,9 +972,9 @@ textarea {
     height: 9rem;
     width: 100%; }
     .searchForm__icon {
-      left: 3rem;
+      left: 2rem;
       top: auto;
-      bottom: 5rem; }
+      bottom: 3rem; }
     .searchForm__input {
       font-size: 1.5rem;
       padding: 2rem 2rem 2rem 4.5rem; } }
@@ -1293,7 +1293,7 @@ textarea {
   .topnav {
     box-shadow: 0 8px 10px -8px #bbb9bc;
     height: auto;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 0 2rem;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: space-between;
@@ -1317,6 +1317,8 @@ textarea {
         width: 100%; } }
 
 @media screen and (max-width: 520px) {
+  .topnav__buttons button {
+    font-size: 1.4rem; }
   .navigation__wrapper {
     flex-direction: row;
     justify-content: space-between;

@@ -121,7 +121,7 @@
     .topnav {
         box-shadow: 0 8px 10px -8px $movie-lightgrey;
         height: auto;
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 2rem 2rem 0 2rem;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: space-between;
@@ -152,6 +152,11 @@
 }
 
 @media screen and (max-width: 520px) {
+    .topnav {
+        &__buttons button {
+            font-size: 1.4rem;
+        }
+    }
     .navigation {
         &__wrapper {
             flex-direction: row;

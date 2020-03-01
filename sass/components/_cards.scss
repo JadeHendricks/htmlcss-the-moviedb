@@ -399,4 +399,9 @@
   .castCard {
     flex: 0 1 100%;
   }
+  .actorDetailSummary {
+    &__image {
+        object-fit: cover;
+    }
+}
 }

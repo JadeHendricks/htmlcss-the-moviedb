@@ -227,6 +227,18 @@ body {
     .body {
         flex-direction: column-reverse;
     }
+    .movieDetailHeader {
+        &__playicon {
+            top: 50%;
+        }
+        height: 50rem;
+        &__videos {
+            display: none;
+        }
+        &__media {
+            display: none;
+         }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -250,27 +262,6 @@ body {
     }
     .movieDetailHeader {
         height: 40rem;
-        position: relative;
-        color: $movie-white;
-        &__playicon {
-            top: 50%;
-        }
-        &__media {
-           position: absolute;
-           bottom: 4rem;
-           display: none;
-        }
-        &__videos {
-            display: none;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-            & img {
-                width: 100%;
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
     }
     
 }
@@ -281,6 +272,21 @@ body {
         &__title {
             font-size: 3rem;
             margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .movieDetailSummary {
+        &__image {
+            object-fit: cover;
+        }
+        &__wrapper {
+            .category {
+                &__wrapper {
+                    justify-content: flex-start;
+                }
+            }
         }
     }
 }
