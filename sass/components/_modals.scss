@@ -53,3 +53,33 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 4rem);
+    top: 12%;
+  }
+  
+  .modalAuth {
+    &__slug {
+      font-size: 1.6rem;
+      margin: 3rem 0;
+    }
+    &__tabs {
+      display: flex;
+      color: $movie-white;
+      & button.tab {
+        padding: 1.5rem 1rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .modalAuth {
+    &__slug {
+      font-size: 1.2rem;
+    }
+  }
+}

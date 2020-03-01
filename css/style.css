@@ -977,7 +977,17 @@ textarea {
       bottom: 3rem; }
     .searchForm__input {
       font-size: 1.5rem;
-      padding: 2rem 2rem 2rem 4.5rem; } }
+      padding: 2rem 2rem 2rem 4.5rem; }
+  .inputbox__box {
+    padding: 1rem 1.5rem; }
+  .inputbox__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 2rem; }
+  .inputbox__label {
+    font-size: 1.2rem; }
+  .inputbox__input {
+    font-size: 1.6rem; } }
 
 @media screen and (max-width: 520px) {
   .searchForm__icon {
@@ -1029,6 +1039,24 @@ textarea {
       .modalAuth__tabs button.active:hover {
         color: #333333;
         background-color: #ffffff; }
+
+@media screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 4rem);
+    top: 12%; }
+  .modalAuth__slug {
+    font-size: 1.6rem;
+    margin: 3rem 0; }
+  .modalAuth__tabs {
+    display: flex;
+    color: #ffffff; }
+    .modalAuth__tabs button.tab {
+      padding: 1.5rem 1rem;
+      font-size: 1.4rem; } }
+
+@media screen and (max-width: 520px) {
+  .modalAuth__slug {
+    font-size: 1.2rem; } }
 
 .reviews {
   color: #333333;

@@ -245,6 +245,22 @@ textarea {
         padding: 2rem 2rem 2rem 4.5rem;
     }
   }
+  .inputbox {
+    &__box {
+      padding: 1rem 1.5rem;
+    }
+    &__icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      right: 2rem;
+    }
+    &__label {
+      font-size: 1.2rem;
+    }
+    &__input {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 @media screen and (max-width: 520px) {
