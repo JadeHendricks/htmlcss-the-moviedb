@@ -243,6 +243,11 @@
       }
     }
   }
+
+  .cardSearch {
+    flex: 0 1 23%;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -278,6 +283,10 @@
       }
     }
   }
+
+  .cardSearch {
+    flex: 0 1 31%;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -298,6 +307,12 @@
     margin-bottom: 3rem;
     &__image {
       height: 20rem;
+    }
+  }
+  .cardSearch {
+    flex: 0 1 48%;
+    &__description {
+      font-size: 1.2rem;
     }
   }
 }
@@ -332,6 +347,13 @@
           font-size: 1.2rem;
         }
       }
+    }
+  }
+
+  .cardSearch {
+    flex: 0 1 100%;
+    &__description {
+      font-size: 1.4rem;
     }
   }
 }

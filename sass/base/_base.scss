@@ -212,8 +212,29 @@ body {
     background: linear-gradient(128deg, rgba(133,133,133,0.8) 0%, rgba(0,0,0,0.8) 100%);
 }
 
+@media screen and (max-width: 1660px) {
+    .searchResults {
+        padding: 4rem;
+        &__title {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .body {
         flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .searchResults {
+        padding: 2rem;
+        &__title {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
     }
 }

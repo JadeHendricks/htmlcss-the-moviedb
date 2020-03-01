@@ -175,9 +175,24 @@ body {
   z-index: 2;
   background: linear-gradient(128deg, rgba(133, 133, 133, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%); }
 
+@media screen and (max-width: 1660px) {
+  .searchResults {
+    padding: 4rem; }
+    .searchResults__title {
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 6rem; } }
+
 @media screen and (max-width: 1200px) {
   .body {
     flex-direction: column-reverse; } }
+
+@media screen and (max-width: 767px) {
+  .searchResults {
+    padding: 2rem; }
+    .searchResults__title {
+      font-size: 3rem;
+      margin-bottom: 4rem; } }
 
 *,
 html,
@@ -579,7 +594,9 @@ strong {
     height: 2.5rem;
     width: 2.5rem; }
     .moreMovies .ratingholder__number {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .cardSearch {
+    flex: 0 1 23%; } }
 
 @media screen and (max-width: 1200px) {
   .movieCard {
@@ -601,7 +618,9 @@ strong {
     height: 3.5rem;
     width: 3.5rem; }
     .moreMovies .ratingholder__number {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .cardSearch {
+    flex: 0 1 31%; } }
 
 @media screen and (max-width: 991px) {
   .movieDetails__wrapper {
@@ -616,7 +635,11 @@ strong {
     flex: 0 1 48%;
     margin-bottom: 3rem; }
     .movieCard__image {
-      height: 20rem; } }
+      height: 20rem; }
+  .cardSearch {
+    flex: 0 1 48%; }
+    .cardSearch__description {
+      font-size: 1.2rem; } }
 
 @media screen and (max-width: 520px) {
   .movieSection__titles {
@@ -634,7 +657,11 @@ strong {
     .moreMovies .movieCard__image {
       height: 28rem; }
     .moreMovies .movieCard__buttons button {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem; }
+  .cardSearch {
+    flex: 0 1 100%; }
+    .cardSearch__description {
+      font-size: 1.4rem; } }
 
 button[disabled] {
   background-color: #bbb9bc;
