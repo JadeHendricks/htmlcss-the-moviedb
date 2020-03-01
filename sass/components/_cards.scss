@@ -66,15 +66,17 @@
   }
   &__wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .castCard {
-  margin-right: 6.66666%;
   margin-bottom: 2.5rem;
   background-color: $movie-white;
   text-align: center;
   font-size: 1.4rem;
+  flex: 0 1 23%;
   &:last-child {
     margin-right: 0;
   }
@@ -248,6 +250,34 @@
     flex: 0 1 23%;
   }
 
+  .cast {
+    margin: 7rem 0;
+    &__title {
+      margin-bottom: 2rem;
+    }
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  
+  .castCard {
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    flex: 0 1 23%;
+  
+    &__imageholder {
+      height: 25rem;
+    }
+    &__info {
+      padding: 1.5rem;
+    }
+    &__realname {
+      font-size: 1.4rem;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -286,6 +316,15 @@
 
   .cardSearch {
     flex: 0 1 31%;
+  }
+
+  .castCard {
+    margin-bottom: 4rem;
+    flex: 0 1 48%;
+  
+    &__imageholder {
+      height: 28rem;
+    }
   }
 }
 
@@ -355,5 +394,9 @@
     &__description {
       font-size: 1.4rem;
     }
+  }
+
+  .castCard {
+    flex: 0 1 100%;
   }
 }

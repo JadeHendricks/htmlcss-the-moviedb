@@ -187,6 +187,38 @@ body {
   .body {
     flex-direction: column-reverse; } }
 
+@media screen and (max-width: 991px) {
+  .movieMain__title {
+    padding-right: 7rem; }
+  .movieMain .ratingholder {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    height: 5rem;
+    width: 5rem; }
+    .movieMain .ratingholder__number {
+      font-size: 1.4rem; }
+  .movieDetailSummary__image {
+    object-fit: contain; }
+  .movieDetailHeader {
+    height: 40rem;
+    position: relative;
+    color: #ffffff; }
+    .movieDetailHeader__playicon {
+      top: 50%; }
+    .movieDetailHeader__media {
+      position: absolute;
+      bottom: 4rem;
+      display: none; }
+    .movieDetailHeader__videos {
+      display: none;
+      justify-content: flex-start;
+      flex-wrap: wrap; }
+      .movieDetailHeader__videos img {
+        width: 100%; }
+        .movieDetailHeader__videos img:last-child {
+          margin-right: 0; } }
+
 @media screen and (max-width: 767px) {
   .searchResults {
     padding: 2rem; }
@@ -466,14 +498,16 @@ strong {
   .cast__title {
     margin-bottom: 2rem; }
   .cast__wrapper {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
 
 .castCard {
-  margin-right: 6.66666%;
   margin-bottom: 2.5rem;
   background-color: #ffffff;
   text-align: center;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  flex: 0 1 23%; }
   .castCard:last-child {
     margin-right: 0; }
   .castCard__imageholder {
@@ -596,7 +630,25 @@ strong {
     .moreMovies .ratingholder__number {
       font-size: 1rem; }
   .cardSearch {
-    flex: 0 1 23%; } }
+    flex: 0 1 23%; }
+  .cast {
+    margin: 7rem 0; }
+    .cast__title {
+      margin-bottom: 2rem; }
+    .cast__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+  .castCard {
+    margin-bottom: 2.5rem;
+    font-size: 1.4rem;
+    flex: 0 1 23%; }
+    .castCard__imageholder {
+      height: 25rem; }
+    .castCard__info {
+      padding: 1.5rem; }
+    .castCard__realname {
+      font-size: 1.4rem; } }
 
 @media screen and (max-width: 1200px) {
   .movieCard {
@@ -620,7 +672,12 @@ strong {
     .moreMovies .ratingholder__number {
       font-size: 1.2rem; }
   .cardSearch {
-    flex: 0 1 31%; } }
+    flex: 0 1 31%; }
+  .castCard {
+    margin-bottom: 4rem;
+    flex: 0 1 48%; }
+    .castCard__imageholder {
+      height: 28rem; } }
 
 @media screen and (max-width: 991px) {
   .movieDetails__wrapper {
@@ -661,7 +718,9 @@ strong {
   .cardSearch {
     flex: 0 1 100%; }
     .cardSearch__description {
-      font-size: 1.4rem; } }
+      font-size: 1.4rem; }
+  .castCard {
+    flex: 0 1 100%; } }
 
 button[disabled] {
   background-color: #bbb9bc;
