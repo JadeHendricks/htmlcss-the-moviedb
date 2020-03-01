@@ -117,7 +117,7 @@
     flex: 0 1 23%;
     margin-bottom: 2.5rem;
     &__title {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     &__buttons {
       margin-top: 1.5rem;
@@ -182,6 +182,7 @@
 }
 
 @media screen and (max-width: 1660px) {
+  //index
   .movieSection {
     padding: 6rem 2rem;
   }
@@ -210,6 +211,38 @@
       height: 6rem;
     }
   }
+
+  //actor-details
+  .movieMain {
+    padding: 4rem;
+  }
+  .moreMovies {
+    & .movieCard {
+      flex: 0 1 30%;
+      margin-bottom: 2.5rem;
+      &__title {
+        font-size: 1.4rem;
+      }
+      &__image {
+        height: 24rem;
+      }
+      &__buttons {
+        & button {
+          font-size: 1rem;
+        }
+      }
+      &__information {
+        padding: 1rem;
+      }
+    }
+    & .ratingholder {
+      height: 2.5rem;
+      width: 2.5rem;
+      &__number {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -220,6 +253,42 @@
     &__image {
       height: 20rem;
     }
+  }
+
+  //actor-details
+  .movieMain {
+    padding: 2rem;
+  }
+  .moreMovies {
+    & .movieCard {
+      flex: 0 1 48%;
+      margin-bottom: 3rem;
+      &__title {
+        font-size: 1.6rem;
+      }
+      &__image {
+        height: 28rem;
+      }
+    }
+    & .ratingholder {
+      height: 3.5rem;
+      width: 3.5rem;
+      &__number {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .movieDetails__wrapper {
+    flex-direction: column;
+  }
+  .actorDetailSummary__image {
+    object-fit: contain;
+  }
+  .movieDetailSummary  {
+    min-height: auto;
   }
 }
 
@@ -245,6 +314,24 @@
     margin-bottom: 2rem;
     &__image {
       height: 22rem;
+    }
+  }
+
+  .moreMovies {
+    &__titles {
+      flex-direction: column;
+    }
+    & .movieCard {
+      flex: 1;
+      margin-bottom: 3rem;
+      &__image {
+        height: 28rem;
+      }
+      &__buttons {
+        & button {
+          font-size: 1.2rem;
+        }
+      }
     }
   }
 }

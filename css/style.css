@@ -492,7 +492,7 @@ strong {
   flex: 0 1 23%;
   margin-bottom: 2.5rem; }
   .moreMovies .movieCard__title {
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
   .moreMovies .movieCard__buttons {
     margin-top: 1.5rem;
     display: flex;
@@ -561,7 +561,25 @@ strong {
         font-size: 1rem; }
     .movieCard__title {
       margin: 0 4.5rem 2rem 0;
-      height: 6rem; } }
+      height: 6rem; }
+  .movieMain {
+    padding: 4rem; }
+  .moreMovies .movieCard {
+    flex: 0 1 30%;
+    margin-bottom: 2.5rem; }
+    .moreMovies .movieCard__title {
+      font-size: 1.4rem; }
+    .moreMovies .movieCard__image {
+      height: 24rem; }
+    .moreMovies .movieCard__buttons button {
+      font-size: 1rem; }
+    .moreMovies .movieCard__information {
+      padding: 1rem; }
+  .moreMovies .ratingholder {
+    height: 2.5rem;
+    width: 2.5rem; }
+    .moreMovies .ratingholder__number {
+      font-size: 1rem; } }
 
 @media screen and (max-width: 1200px) {
   .movieCard {
@@ -569,7 +587,29 @@ strong {
     margin-bottom: 2rem;
     font-size: 1rem; }
     .movieCard__image {
-      height: 20rem; } }
+      height: 20rem; }
+  .movieMain {
+    padding: 2rem; }
+  .moreMovies .movieCard {
+    flex: 0 1 48%;
+    margin-bottom: 3rem; }
+    .moreMovies .movieCard__title {
+      font-size: 1.6rem; }
+    .moreMovies .movieCard__image {
+      height: 28rem; }
+  .moreMovies .ratingholder {
+    height: 3.5rem;
+    width: 3.5rem; }
+    .moreMovies .ratingholder__number {
+      font-size: 1.2rem; } }
+
+@media screen and (max-width: 991px) {
+  .movieDetails__wrapper {
+    flex-direction: column; }
+  .actorDetailSummary__image {
+    object-fit: contain; }
+  .movieDetailSummary {
+    min-height: auto; } }
 
 @media screen and (max-width: 767px) {
   .movieCard {
@@ -585,7 +625,16 @@ strong {
     flex: 1;
     margin-bottom: 2rem; }
     .movieCard__image {
-      height: 22rem; } }
+      height: 22rem; }
+  .moreMovies__titles {
+    flex-direction: column; }
+  .moreMovies .movieCard {
+    flex: 1;
+    margin-bottom: 3rem; }
+    .moreMovies .movieCard__image {
+      height: 28rem; }
+    .moreMovies .movieCard__buttons button {
+      font-size: 1.2rem; } }
 
 button[disabled] {
   background-color: #bbb9bc;
