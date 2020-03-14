@@ -1245,7 +1245,10 @@ textarea {
       top: 0.8rem; }
   .navigation__wrapper {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; }
   .navigation__node {
     color: #333333;
     padding: 3rem 0;
