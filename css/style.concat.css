@@ -471,11 +471,13 @@ strong {
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between; }
-    .movieCard__buttons button {
+    .movieCard__buttons button, .movieCard__buttons a {
       padding: 1rem 0.8rem;
       width: 48%;
-      font-size: 1.2rem; }
-      .movieCard__buttons button:last-child {
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-align: center; }
+      .movieCard__buttons button:last-child, .movieCard__buttons a:last-child {
         margin-right: 0; }
   .movieCard__title {
     margin: 0 4rem 1.5rem 0;
@@ -545,19 +547,11 @@ strong {
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between; }
-    .moreMovies .movieCard__buttons button {
+    .moreMovies .movieCard__buttons button, .moreMovies .movieCard__buttons a {
       padding: 1rem 0.5rem;
       width: 49%;
       font-size: 1.2rem; }
-      .moreMovies .movieCard__buttons button:last-child {
-        margin-right: 0; }
-    .moreMovies .movieCard__buttons a {
-      padding: 1rem 0.5rem;
-      width: 49%;
-      font-size: 1.2rem;
-      text-decoration: none;
-      text-align: center; }
-      .moreMovies .movieCard__buttons a:last-child {
+      .moreMovies .movieCard__buttons button:last-child, .moreMovies .movieCard__buttons a:last-child {
         margin-right: 0; }
   .moreMovies .movieCard__information {
     padding: 1rem; }
@@ -612,7 +606,7 @@ strong {
       margin-top: 1.5rem;
       display: flex;
       justify-content: space-between; }
-      .movieCard__buttons button {
+      .movieCard__buttons button, .movieCard__buttons a {
         width: 49%;
         font-size: 1rem; }
     .movieCard__title {
@@ -627,7 +621,7 @@ strong {
       font-size: 1.4rem; }
     .moreMovies .movieCard__image {
       height: 24rem; }
-    .moreMovies .movieCard__buttons button {
+    .moreMovies .movieCard__buttons button, .moreMovies .movieCard__buttons a {
       font-size: 1rem; }
     .moreMovies .movieCard__information {
       padding: 1rem; }
