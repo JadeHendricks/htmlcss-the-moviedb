@@ -1240,7 +1240,8 @@ textarea {
     padding: 2.8rem 0;
     font-size: 2.8rem;
     border-bottom: 0.1rem solid #e7e7e7;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-decoration: none; }
     .navigation__logo span {
       color: #3cb13e;
       font-size: 3rem;
@@ -1256,7 +1257,8 @@ textarea {
     color: #333333;
     padding: 3rem 0;
     border-bottom: 0.1rem solid #e7e7e7;
-    transition: 0.4s all; }
+    transition: 0.4s all;
+    text-decoration: none; }
     .navigation__node:hover {
       color: #3cb13e;
       cursor: pointer; }
@@ -1304,16 +1306,14 @@ textarea {
     flex: 1;
     box-shadow: 0 -8px 10px -8px #bbb9bc; }
     .navigation__logo {
-      display: none;
-      text-decoration: none; }
+      display: none; }
     .navigation__wrapper {
       flex-direction: row;
       justify-content: space-around; }
     .navigation__node {
       border: 0;
       color: #ffffff;
-      padding: 2rem 0;
-      text-decoration: none; }
+      padding: 2rem 0; }
       .navigation__node.active {
         color: #ffffff;
         font-weight: 700;
