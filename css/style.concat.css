@@ -15,7 +15,8 @@ body {
   display: flex; }
 
 .main-content {
-  flex: 1; }
+  flex: 1;
+  position: relative; }
 
 .container {
   max-width: 156rem;
@@ -549,6 +550,14 @@ strong {
       width: 49%;
       font-size: 1.2rem; }
       .moreMovies .movieCard__buttons button:last-child {
+        margin-right: 0; }
+    .moreMovies .movieCard__buttons a {
+      padding: 1rem 0.5rem;
+      width: 49%;
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-align: center; }
+      .moreMovies .movieCard__buttons a:last-child {
         margin-right: 0; }
   .moreMovies .movieCard__information {
     padding: 1rem; }
@@ -1270,13 +1279,15 @@ textarea {
 
 .topnav {
   background-color: #ffffff;
-  box-shadow: inset 0.8rem 0 1rem -1rem #bbb9bc, 0 8px 6px -6px #bbb9bc;
+  box-shadow: inset 0.8rem 0 1rem -1rem #bbb9bc, 0 8px 6px -9px #bbb9bc;
   height: 9rem;
   padding: 0 2rem 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative; }
+  position: sticky;
+  top: 0;
+  z-index: 2; }
   .topnav__account {
     display: none;
     align-items: center;
@@ -1299,14 +1310,16 @@ textarea {
     flex: 1;
     box-shadow: 0 -8px 10px -8px #bbb9bc; }
     .navigation__logo {
-      display: none; }
+      display: none;
+      text-decoration: none; }
     .navigation__wrapper {
       flex-direction: row;
       justify-content: space-around; }
     .navigation__node {
       border: 0;
       color: #ffffff;
-      padding: 2rem 0; }
+      padding: 2rem 0;
+      text-decoration: none; }
       .navigation__node.active {
         color: #ffffff;
         font-weight: 700;
